@@ -3,14 +3,14 @@ const Address = () => {
     {
       id: 1,
       iconImg: "img/address/phone.png",
-      name: "Phone",
+      name: "Telefono",
       info: (
         <>
           <li>
-            <a href="Tel: +452 666 386">+452 666 386</a>
+            <a href="Tel: +681 680 641"></a>
           </li>
           <li>
-            <a href="Tel: +465 562 226">+465 562 226</a>
+          <a href="Tel: +681 680 641">+681 680 641</a>
           </li>
         </>
       ),
@@ -23,10 +23,10 @@ const Address = () => {
       info: (
         <>
           <li>
-            <a href="mailto:JF21@gmail.com">support@gmail.com</a>
+            <a href="mailto:juanfranciscoaguilarsanchez@gmail.com">JuanFran@gmail.com</a>
           </li>
           <li>
-            <a href="mailto:JF21@gmail.com">example@support.com</a>
+            <a href="mailto:jagusan2108@gmail.com">soporte@soporte.com</a>
           </li>
         </>
       ),
@@ -35,14 +35,14 @@ const Address = () => {
     {
       id: 3,
       iconImg: "img/address/location.png",
-      name: "Address",
+      name: "Dirección",
       info: (
         <>
           <li>
             <p>
-              Envato 121 King St,
+              Fernán Núñez,
               <br />
-              Melbourne, Australia
+              14520, Córdoba.
             </p>
           </li>
         </>

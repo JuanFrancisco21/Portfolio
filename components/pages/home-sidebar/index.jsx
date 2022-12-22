@@ -4,9 +4,7 @@ import { useState } from "react";
 import Sidebar from "../../header/Sidebar";
 import Hero from "../../hero/Hero";
 import About from "../../about/About";
-import Service from "../../service/Service";
 import Portfolio from "../../portfolio/Portfolio";
-import Testimonial from "../../testimonial/Testimonial";
 import Blog from "../../blog/Blog";
 import Contact from "../../Contact";
 import Address from "../../Address";
@@ -71,19 +69,7 @@ const JFHomeSidebar = () => {
       {/* End Hero */}
       <About />
       {/* End Hero */}
-      <div className="jf_tm_services" id="service">
-        <div className="container">
-          <div className="jf_tm_title">
-            <h3>What I Do</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
-            </p>
-          </div>
-          {/* End edian_tm_title */}
-          <Service />
-        </div>
-      </div>
+      
       {/* End Services */}
 
       <div className="jf_tm_portfolio" id="portfolio">
@@ -91,8 +77,7 @@ const JFHomeSidebar = () => {
           <div className="jf_tm_title">
             <h3>Portfolio</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Estos son algunos de los proyectos desarrollados a lo largo del aprendizaje en ambos grados superiores, de desarrollo de software.
             </p>
           </div>
           {/* End edian_tm_title */}
@@ -101,32 +86,12 @@ const JFHomeSidebar = () => {
       </div>
       {/* End Portfolio */}
 
-      <div className="jf_tm_testimonials" id="testimonial">
-        <div className="container">
-          <div className="jf_tm_title">
-            <h3>Testimonials</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
-            </p>
-          </div>
-          {/* End edian_tm_title */}
-          <div className="list ">
-            <ul>
-              <Testimonial />
-            </ul>
-          </div>
-        </div>
-      </div>
-      {/* End Testimonial */}
-
       <div className="jf_tm_news" id="blog">
         <div className="container">
           <div className="jf_tm_title">
             <h3>Blog</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Recuerdos de eventos vividos gracias al aprendizaje como programador.
             </p>
           </div>
           {/* End edian_tm_title */}
@@ -138,10 +103,9 @@ const JFHomeSidebar = () => {
       <div className="jf_tm_contact" id="contact">
         <div className="container">
           <div className="jf_tm_title">
-            <h3>Contact</h3>
+            <h3>Contacto</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Toda la información y métodos para poder contactarme personalmente.
             </p>
           </div>
           <div className="extra_info">
@@ -157,9 +121,9 @@ const JFHomeSidebar = () => {
             >
               <div className="title">
                 <p>
-                  I am always open to discussing product
+                  Siempre abierto a escuchar ofertas
                   <br />
-                  <span> design work or partnerships.</span>
+                  <span> para desarrollo de software.</span>
                 </p>
               </div>
               {/* End title */}

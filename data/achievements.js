@@ -1,6 +1,6 @@
 module.exports = [
-  { title: "06", subTitle1: "years of", subTitle2: "Experience" },
-  { title: "97", subTitle1: "Completed", subTitle2: "Projects" },
-  { title: "81", subTitle1: "Happy", subTitle2: "Customers" },
-  { title: "53", subTitle1: "Most awards ", subTitle2: "Winner" },
+  { title: "03", subTitle1: "Años de", subTitle2: "Aprendizaje" },
+  { title: "02", subTitle1: "Grado", subTitle2: "Superior" },
+  { title: "02", subTitle1: "Framework ", subTitle2: "Conocidos" },
+  { title: "05", subTitle1: "Proyectos", subTitle2: "Propios" },
 ];

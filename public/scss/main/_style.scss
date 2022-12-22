@@ -509,7 +509,7 @@ body.dark .loader_line:after {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: #f5f5f5;
+  background-color: #b3b3b3b0;
   transition: transform 0.5s;
   transform-origin: right;
   transform: scaleX(0);
@@ -1939,7 +1939,7 @@ body.dark .loader_line:after {
 }
 .jf_tm_modalbox .description_wrap .image {
   position: relative;
-  height: 450px;
+  height: 550px;
   margin-bottom: 20px;
   background: #efefef;
   border-radius: 6px;

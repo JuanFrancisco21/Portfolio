@@ -1,4 +1,7 @@
 import experienceContent from "../../data/experience";
+import {
+  FiBriefcase,
+} from "react-icons/fi";
 
 const Experience = () => {
   return (
@@ -6,8 +9,7 @@ const Experience = () => {
       {experienceContent.map((val, i) => (
         <li key={i}>
           <div className="icon">
-            <img src="img/about/briefcase.png" alt="icon" />
-            <i className="fa fa-briefcase"></i>
+            <FiBriefcase />
           </div>
           <span className="time open-sans-font text-uppercase">{val.year}</span>
           <h5 className="poppins-font text-uppercase">

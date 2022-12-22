@@ -1,4 +1,7 @@
 import educationContent from "../../data/education";
+import {
+  FiBookOpen,
+} from "react-icons/fi";
 
 const Education = () => {
   return (
@@ -6,7 +9,7 @@ const Education = () => {
       {educationContent.map((val, i) => (
         <li key={i}>
           <div className="icon">
-            <img src="img/about/book.png" alt="icon" />
+            <FiBookOpen />
           </div>
           <span className="time open-sans-font text-uppercase">{val.year}</span>
           <h5 className="poppins-font text-uppercase">

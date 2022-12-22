@@ -16,7 +16,7 @@ const About = () => {
     <div className="jf_tm_about" id="about">
       <div className="container">
         <div className="about_title">
-          <h3>About Me</h3>
+          <h3>Sobre mi</h3>
         </div>
         <div className="content">
           <div
@@ -27,20 +27,16 @@ const About = () => {
           >
             <div className="info">
               <h3>
-                Hi, Im <span>Rokers Nelson</span>
+                Hola, soy <span>Juan Fco Aguilar Sánchez</span>
               </h3>
               <p>
-                Im a Freelancer Front-end Developer with over 6 years of
-                experience. Im from San Francisco. I code and create web
-                elements for amazing people around the world. I like work with
-                new people.
+                Soy un estudiante de desarrollo de aplicaciones Web. Soy una persona apasionada y dedicada con un gran interés por la tecnología y la informática. Tengo experiencia en el desarrollo de aplicaciones multiplataforma y actualmente estoy estudiando para ampliar mis habilidades y conocimientos en este campo.
               </p>
             </div>
             <div className="my_skills">
-              <h3 className="title">What is my skill level?</h3>
+              <h3 className="title">¿Que tecnologias conozco?</h3>
               <p className="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                ipsum sit nibh amet egestas tellus.
+                Aqui recopilo las tecnologias aprendidas a lo largo de mis estudios en los dos grados superiores.
               </p>
               <div className="wrapper">
                 <div className="dodo_progress">
@@ -53,7 +49,7 @@ const About = () => {
                   className="color"
                   onClick={toggleModalOne}
                 >
-                  See More
+                  Ver Más
                 </button>
               </div>
             </div>
@@ -81,8 +77,8 @@ const About = () => {
                 data-aos-delay="300"
               >
                 <div className="info">
-                  <h3>6+ Years</h3>
-                  <span>Of Experiance</span>
+                  <h3>3 Años</h3>
+                  <span>de Aprendizaje</span>
                 </div>
               </div>
             </div>

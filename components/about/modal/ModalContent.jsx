@@ -9,18 +9,18 @@ const ModalContent = () => {
     <>
       <div className="row">
         <div className="col-6">
-          <h3>Personal Info</h3>
+          <h3>Información Personal</h3>
           <PersonalInfo />
           <div className="jf_tm_button">
-            <a href="img/sample.pdf" download className="color">
-              Download CV
+            <a href="img/CV.pdf" download className="color">
+              Descarga CV
             </a>
           </div>
         </div>
         {/* End  PersonalInfo */}
 
         <div className="col-6 achievements-wrapper">
-          <h3>Achievements</h3>
+          <h3>Logros</h3>
           <Achievements />
         </div>
         {/* End  Achievements */}
@@ -29,13 +29,13 @@ const ModalContent = () => {
 
       <div className="row resume-box">
         <div className="col-6">
-          <h3>Experience</h3>
+          <h3>Experiencia</h3>
           <Experience />
         </div>
         {/* End  Experience */}
 
         <div className="col-6">
-          <h3>Education</h3>
+          <h3>Educación</h3>
           <Education />
         </div>
         {/* End  Education */}

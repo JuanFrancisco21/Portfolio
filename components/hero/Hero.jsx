@@ -8,9 +8,8 @@ import heroImage from "../../public/img/hero/2.jpg";
 const heroContent = {
   shapeImage: shapeImage,
   heroImage: heroImage,
-  name: "Rokers Nelson",
-  description: `I'm a Freelancer Front-end React Developer based In USA, over 6 years of
-  professional experience.`,
+  name: "Juan Fco Aguilar Sánchez",
+  description: `Soy Estudiante de Desarrollador de Software.`,
 };
 
 const Hero = () => {
@@ -28,7 +27,7 @@ const Hero = () => {
             data-aos-delay="100"
             className="hello"
           >
-            Hello, I&apos;m {heroContent.name}
+            Hola, soy {heroContent.name}
           </h5>
           <h1
             className="name"
@@ -41,7 +40,7 @@ const Hero = () => {
                 loop
                 typeSpeed={150}
                 backSpeed={60}
-                strings={["Graphic Designer", "Web Developer"]}
+                strings={["Desarrollador Web", "Desarrollador Multiplataforma"]}
                 smartBackspace
                 shuffle={false}
                 backDelay={1}
@@ -76,8 +75,8 @@ const Hero = () => {
             data-aos-duration="1200"
             data-aos-delay="500"
           >
-            <a href="img/sample.pdf" download className="color">
-              Download CV
+            <a href="img/CV.pdf" download className="color">
+              Descarga CV
             </a>
           </div>
         </div>

@@ -8,9 +8,9 @@ import logo2 from "../../public/img/logo/light.png";
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
-  name: "Nelson",
-  email: "support@gmail.com",
-  emailRef: "mailto:JF21@gmail.com",
+  name: "Juan Francisco",
+  email: "JF@gmail.com",
+  emailRef: "Email:juanfranciscoaguilarsanchez@gmail.com",
 };
 
 const Sidebar = () => {
@@ -35,7 +35,7 @@ const Sidebar = () => {
         <div className="sidebar_inner">
           <div className="logo">
             <Link href="/">
-              <Image className="logo_light" src={logo} alt="brand" />
+              <Image className="logo_light" src={logo} alt="brand"  />
               <Image className="logo_dark" src={logo2} alt="brand" />
             </Link>
           </div>
@@ -46,9 +46,7 @@ const Sidebar = () => {
               scrollTargetIds={[
                 "home",
                 "about",
-                "service",
                 "portfolio",
-                "testimonial",
                 "blog",
                 "contact",
               ]}

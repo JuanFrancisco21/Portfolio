@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_vacu99j",
+        "template_toc4num",
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "WqO_8vlLzebOvBdOf"
       )
       .then(
         (result) => {
@@ -52,7 +52,7 @@ const Contact = () => {
         onSubmit={sendEmail}
       >
         <div className="first_row">
-          <input type="text" placeholder="Name *" name="name" required />
+          <input type="text" placeholder="Nombre *" name="name" required />
         </div>
         {/* End .first_row */}
 
@@ -67,13 +67,13 @@ const Contact = () => {
         {/* End .second */}
 
         <div className="third">
-          <textarea placeholder="Message *" name="message" required></textarea>
+          <textarea placeholder="Mensaje *" name="message" required></textarea>
         </div>
         {/* End .third */}
 
         <div className="jf_tm_button">
           <button type="submit" className="color">
-            Submit
+            Enviar
           </button>
         </div>
         {/* End tokyo_tm_button */}

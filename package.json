@@ -1,4 +1,5 @@
 {
+  "homepage": "http://JuanFrancisco21.github.io/Jf-Portfolio",
   "name": "nextjs-toolbox",
   "version": "1.0.0",
   "author": "Netlify Inc",
@@ -8,19 +9,20 @@
     "Charlie Gerard",
     "Ben Hong"
   ],
-  "homepage": "https://github.com/netlify-templates/nextjs-toolbox",
   "bugs": {
     "url": "https://github.com/netlify-templates/nextjs-toolbox/issues"
   },
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "export": "next export"
   },
   "dependencies": {
-    "cypress": "^10.0.3",
     "@emailjs/browser": "^3.9.1",
     "aos": "^2.3.4",
+    "cypress": "^10.0.3",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
@@ -37,9 +39,10 @@
     "react-transition-group": "^4.4.5",
     "react-typed": "^1.2.0",
     "sass": "^1.56.1",
-    "slick-carousel": "^1.8.1"    
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "netlify-plugin-cypress": "2.2.0"
   },
   "description": "![next-on-netlify](https://user-images.githubusercontent.com/3611928/156433088-21a7cdf6-760c-4758-a3b7-9073bac5e452.png)",

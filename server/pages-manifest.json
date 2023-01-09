@@ -1,0 +1,12 @@
+{
+  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
+  "/404": "pages/404.html",
+  "/home-horizontal": "pages/home-horizontal.html",
+  "/home-horizontal_rtl": "pages/home-horizontal_rtl.html",
+  "/home-sidebar-rtl": "pages/home-sidebar-rtl.html",
+  "/home-sidebar": "pages/home-sidebar.html",
+  "/": "pages/index.html",
+  "/success": "pages/success.html",
+  "/_document": "pages/_document.js"
+}

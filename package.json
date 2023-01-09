@@ -2,6 +2,7 @@
   "name": "nextjs-toolbox",
   "version": "1.0.0",
   "author": "JF Inc",
+  "homepage":"https://JuanFrancisco21.github.io/portfolio",
   "contributors": [
     "Tara Manicsic",
     "Prince Wilson",
@@ -15,7 +16,9 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "gh-pages -d out -t true"
+
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",

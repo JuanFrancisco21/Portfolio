@@ -17,7 +17,7 @@
     "export": "next export",
     "start": "next start",
     "static": "next build && next export && touch ./out/.nojekyll",
-    "deploy": "gh-pages -t true -d out"
+    "deploy": "touch ./out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",

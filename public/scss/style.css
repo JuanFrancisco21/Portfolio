@@ -8048,8 +8048,8 @@ a {
   width: 100%;
   max-width: 100%;
   -webkit-mask-size: auto auto;
-  -webkit-mask-image: url(../../hero-shape.svg);
-  mask-image: url(../../hero-shape.svg);
+  -webkit-mask-image: url(./hero-shape.svg);
+  mask-image: url(./hero-shape.svg);
 }
 
 .invalid-feedback,

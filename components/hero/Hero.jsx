@@ -2,14 +2,12 @@ import React from "react";
 import Social from "../Social";
 import ReactTyped from "react-typed";
 import Image from "next/image";
-import shapeImage from "../../public/img/hero/1.jpg";
-import heroImage from "../../public/img/hero/2.jpg";
 
 const heroContent = {
-  shapeImage: shapeImage,
-  heroImage: heroImage,
+  shapeImage: "img/hero/1.jpg",
+  heroImage: "img/hero/2.jpg",
   name: "Juan Fco Aguilar Sánchez",
-  description: `Soy Estudiante de Desarrollador de Software.`,
+  description: `Soy Desarrollador de Software.`,
 };
 
 const Hero = () => {
@@ -18,7 +16,7 @@ const Hero = () => {
     <div className="jf_tm_hero" id="home">
       <div className="content">
         <div className="img-shape" data-aos="fade-up" data-aos-duration="1200">
-          <Image src={heroContent.heroImage} alt="brand" />
+          <img src={heroContent.heroImage} alt="brand" width={300} height={300}/>
         </div>
         <div className="extra">
           <h5

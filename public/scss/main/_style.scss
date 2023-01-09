@@ -2820,7 +2820,7 @@ a {
     display: none;
   }
   &::after {
-    content: url(../../arrow.svg);
+    content: url(https://i.postimg.cc/DznmftxL/arrow.png);
     filter: invert(0.4);
     transition: 0.5s;
   }
@@ -2968,8 +2968,8 @@ a {
     width: 100%;
     max-width: 100%;
     -webkit-mask-size: auto auto;
-    -webkit-mask-image: url(../../hero-shape.svg);
-    mask-image: url(../../hero-shape.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/JuanFrancisco21/portfolio/295c7b6d16d6f4653086ef6a72abbbd62e490366/public/hero-shape.svg);
+    mask-image: url(https://raw.githubusercontent.com/JuanFrancisco21/portfolio/295c7b6d16d6f4653086ef6a72abbbd62e490366/public/hero-shape.svg);
   }
 }
 .invalid-feedback,

@@ -2,7 +2,8 @@ module.exports = {
   assetPrefix: './',
   images: {
     loader: 'akamai',
-    path: '/',
+    path: '',
   },
-  distDir: 'build',
+  basePath: "/nextjs-pages",
+  assetPrefix: "/nextjs-pages",
 };

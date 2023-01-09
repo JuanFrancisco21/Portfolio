@@ -1,6 +1,6 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/404": "pages/404.html",
   "/home-horizontal": "pages/home-horizontal.html",
   "/home-horizontal_rtl": "pages/home-horizontal_rtl.html",

@@ -772,7 +772,9 @@ const Blog = ()=>{
     const [singleData, setSingleData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({});
     const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const handleblogsData = (id)=>{
-        const find = _data_blogs__WEBPACK_IMPORTED_MODULE_4___default().find((item)=>item?.id === id);
+        const find = _data_blogs__WEBPACK_IMPORTED_MODULE_4___default().find((item)=>{
+            return (item === null || item === void 0 ? void 0 : item.id) === id;
+        });
         setSingleData(find);
         setIsOpen(true);
     };
@@ -810,7 +812,8 @@ const Blog = ()=>{
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_slick__WEBPACK_IMPORTED_MODULE_3___default()), {
                         ...settings,
-                        children: _data_blogs__WEBPACK_IMPORTED_MODULE_4___default().map((item)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                        children: _data_blogs__WEBPACK_IMPORTED_MODULE_4___default().map((item)=>{
+                            /*#__PURE__*/ return react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                 "data-aos": "fade-right",
                                 "data-aos-duration": "1200",
                                 "data-aos-delay": "150",
@@ -819,7 +822,9 @@ const Blog = ()=>{
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "image",
-                                            onClick: ()=>handleModle(item?.id),
+                                            onClick: ()=>{
+                                                return handleModle(item === null || item === void 0 ? void 0 : item.id);
+                                            },
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "main",
                                                 style: {
@@ -842,14 +847,17 @@ const Blog = ()=>{
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                                     className: "title",
-                                                    onClick: ()=>handleModle(item?.id),
+                                                    onClick: ()=>{
+                                                        return handleModle(item === null || item === void 0 ? void 0 : item.id);
+                                                    },
                                                     children: item.title
                                                 })
                                             ]
                                         })
                                     ]
                                 })
-                            }, item.id))
+                            }, item.id);
+                        })
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_modal__WEBPACK_IMPORTED_MODULE_2___default()), {
@@ -880,7 +888,7 @@ const Blog = ()=>{
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "main",
                                                 style: {
-                                                    backgroundImage: `url(${singleData?.img})`
+                                                    backgroundImage: `url(${singleData === null || singleData === void 0 ? void 0 : singleData.img})`
                                                 }
                                             })
                                         }),
@@ -889,17 +897,17 @@ const Blog = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
                                                     children: [
-                                                        singleData?.date,
+                                                        singleData === null || singleData === void 0 ? void 0 : singleData.date,
                                                         " ",
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                             href: "#",
-                                                            children: singleData?.meta
+                                                            children: singleData === null || singleData === void 0 ? void 0 : singleData.meta
                                                         })
                                                     ]
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                                     className: "title",
-                                                    children: singleData?.title
+                                                    children: singleData === null || singleData === void 0 ? void 0 : singleData.title
                                                 })
                                             ]
                                         }),
@@ -909,12 +917,12 @@ const Blog = ()=>{
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: "descriptions",
                                                     children: [
-                                                        singleData?.descriptionText1,
+                                                        singleData === null || singleData === void 0 ? void 0 : singleData.descriptionText1,
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             className: "quotebox",
-                                                            children: singleData?.blockquote
+                                                            children: singleData === null || singleData === void 0 ? void 0 : singleData.blockquote
                                                         }),
-                                                        singleData?.descriptionText2
+                                                        singleData === null || singleData === void 0 ? void 0 : singleData.descriptionText2
                                                     ]
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -1164,7 +1172,9 @@ const Portfolio = ()=>{
     const [singleData, setSingleData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({});
     const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const handlePortfolioData = (id)=>{
-        const find = _data_portfolio__WEBPACK_IMPORTED_MODULE_6___default().find((item)=>item?.id === id);
+        const find = _data_portfolio__WEBPACK_IMPORTED_MODULE_6___default().find((item)=>{
+            return (item === null || item === void 0 ? void 0 : item.id) === id;
+        });
         setSingleData(find);
         setIsOpen(true);
     };
@@ -1179,13 +1189,16 @@ const Portfolio = ()=>{
                 "data-aos-duration": "1200",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_slick__WEBPACK_IMPORTED_MODULE_4___default()), {
                     ...settings,
-                    children: _data_portfolio__WEBPACK_IMPORTED_MODULE_6___default().map((item)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                    children: _data_portfolio__WEBPACK_IMPORTED_MODULE_6___default().map((item)=>{
+                        /*#__PURE__*/ return react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "list_inner",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "image",
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        onClick: ()=>handleModle(item?.id),
+                                        onClick: ()=>{
+                                            return handleModle(item === null || item === void 0 ? void 0 : item.id);
+                                        },
                                         className: "details",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
@@ -1215,7 +1228,8 @@ const Portfolio = ()=>{
                                     })
                                 })
                             })
-                        }, item.id))
+                        }, item.id);
+                    })
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_modal__WEBPACK_IMPORTED_MODULE_2___default()), {
@@ -1246,7 +1260,7 @@ const Portfolio = ()=>{
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "main",
                                             style: {
-                                                backgroundImage: `url(${singleData?.portfolioImage})`
+                                                backgroundImage: `url(${singleData === null || singleData === void 0 ? void 0 : singleData.portfolioImage})`
                                             }
                                         })
                                     }),
@@ -1260,10 +1274,10 @@ const Portfolio = ()=>{
                                                         className: "title",
                                                         children: [
                                                             " ",
-                                                            singleData?.title
+                                                            singleData === null || singleData === void 0 ? void 0 : singleData.title
                                                         ]
                                                     }),
-                                                    singleData?.projectDescriptions
+                                                    singleData === null || singleData === void 0 ? void 0 : singleData.projectDescriptions
                                                 ]
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -1277,7 +1291,7 @@ const Portfolio = ()=>{
                                                                     children: "Client"
                                                                 }),
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                                    children: singleData?.clientName
+                                                                    children: singleData === null || singleData === void 0 ? void 0 : singleData.clientName
                                                                 })
                                                             ]
                                                         }),
@@ -1287,7 +1301,7 @@ const Portfolio = ()=>{
                                                                     children: "Category"
                                                                 }),
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                                    children: singleData?.category
+                                                                    children: singleData === null || singleData === void 0 ? void 0 : singleData.category
                                                                 })
                                                             ]
                                                         }),
@@ -1297,7 +1311,7 @@ const Portfolio = ()=>{
                                                                     children: "Data"
                                                                 }),
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                                    children: singleData?.date
+                                                                    children: singleData === null || singleData === void 0 ? void 0 : singleData.date
                                                                 })
                                                             ]
                                                         }),
@@ -1308,10 +1322,10 @@ const Portfolio = ()=>{
                                                                 }),
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                        href: singleData?.portfolioLink,
+                                                                        href: singleData === null || singleData === void 0 ? void 0 : singleData.portfolioLink,
                                                                         target: "_blank",
                                                                         rel: "noopener noreferrer",
-                                                                        children: singleData?.portfolioLink
+                                                                        children: singleData === null || singleData === void 0 ? void 0 : singleData.portfolioLink
                                                                     })
                                                                 })
                                                             ]

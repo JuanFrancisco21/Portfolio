@@ -29,7 +29,9 @@ const Service = ()=>{
     const [singleData, setSingleData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({});
     const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const handleBServicesData = (id)=>{
-        const find = _data_services__WEBPACK_IMPORTED_MODULE_4___default().find((item)=>item?.id === id);
+        const find = _data_services__WEBPACK_IMPORTED_MODULE_4___default().find((item)=>{
+            return (item === null || item === void 0 ? void 0 : item.id) === id;
+        });
         setSingleData(find);
         setIsOpen(true);
     };
@@ -40,13 +42,16 @@ const Service = ()=>{
         className: "service_list",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                children: _data_services__WEBPACK_IMPORTED_MODULE_4___default().map((item)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                children: _data_services__WEBPACK_IMPORTED_MODULE_4___default().map((item)=>{
+                    /*#__PURE__*/ return react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                         "data-aos": "fade-right",
                         "data-aos-duration": "1200",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_parallax_tilt__WEBPACK_IMPORTED_MODULE_3___default()), {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "list_inner",
-                                onClick: ()=>handleModle(item?.id),
+                                onClick: ()=>{
+                                    return handleModle(item === null || item === void 0 ? void 0 : item.id);
+                                },
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: "hover",
                                     children: [
@@ -72,7 +77,8 @@ const Service = ()=>{
                                 })
                             })
                         })
-                    }, item.id))
+                    }, item.id);
+                })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_modal__WEBPACK_IMPORTED_MODULE_2___default()), {
                 isOpen: isOpen,
@@ -104,7 +110,7 @@ const Service = ()=>{
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "main",
                                                 style: {
-                                                    backgroundImage: `url(${singleData?.popupImg})`
+                                                    backgroundImage: `url(${singleData === null || singleData === void 0 ? void 0 : singleData.popupImg})`
                                                 }
                                             })
                                         }),
@@ -112,10 +118,10 @@ const Service = ()=>{
                                             className: "description",
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                                    children: singleData?.popupTitle
+                                                    children: singleData === null || singleData === void 0 ? void 0 : singleData.popupTitle
                                                 }),
-                                                singleData?.firstDescriptionText,
-                                                singleData?.serviceListDescriptions
+                                                singleData === null || singleData === void 0 ? void 0 : singleData.firstDescriptionText,
+                                                singleData === null || singleData === void 0 ? void 0 : singleData.serviceListDescriptions
                                             ]
                                         })
                                     ]
